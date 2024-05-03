@@ -23,10 +23,10 @@ This repository contains all the terraform scripts I've created while learning T
 ```terraform apply -state="path/to/terraform.tfstate"```
 - `-target`: Apply changes only to the specified resource. This parameter allows you to selectively apply changes to a specific resource, which can be helpful when making targeted updates or troubleshooting. For example:
 ```terraform apply -target=aws_instance.example```
-- `auto-approve`: Automatically approve and apply changes without prompting for confirmation. This parameter is useful in automated workflows, such as CI/CD pipelines, where user interaction isn't possible. For example:
+- `-auto-approve`: Automatically approve and apply changes without prompting for confirmation. This parameter is useful in automated workflows, such as CI/CD pipelines, where user interaction isn't possible. For example:
 ```terraform apply -auto-approve```
 - `-input=false`: Disable interactive input. This parameter is suitable for non-interactive environments like CI/CD pipelines, where Terraform commands are executed automatically. For example:
 ```terraform apply -input=false```
-- `parallelism`: Limit the number of concurrent operations. This parameter controls the number of resources Terraform creates or destroys simultaneously. It's useful for controlling resource creation or destruction speed, especially when working with large infrastructures. For example:
+- `-parallelism`: Limit the number of concurrent operations. This parameter controls the number of resources Terraform creates or destroys simultaneously. It's useful for controlling resource creation or destruction speed, especially when working with large infrastructures. For example:
 ```terraform apply -parallelism=10```
 
